@@ -46,6 +46,8 @@ $(document).ready(function() {
 		var index = Math.round(event.item.index - event.item.count / 2);
 		if (index == 0) {
 			index = event.item.count;
+		} else if (index > event.item.count) {
+			index = 1;
 		}
 	    $('.slider-block__slider-number').html(index + " из " + event.item.count);
 	});

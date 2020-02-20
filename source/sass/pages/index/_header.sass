@@ -1,0 +1,109 @@
+.header
+	background: grey
+	background-image: url(../img/block-1-header/background.jpg)
+	background-position: center
+	background-size: cover
+	&__wrap
+		padding-top: 157px
+		margin-bottom: 260px
+		height: 300px
+		color: #fff
+		& h1
+			font-size: 50px
+			line-height: 1
+		& p
+			font-size: 20px
+			font-weight: bold
+			& span
+				color: #FF3754
+	&__btn
+		text-decoration: none
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: bold
+		letter-spacing: 2px
+		color: #fff
+		background: #FF3754
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 300px
+		height: 68px
+		margin-top: 30px
+		border-radius: 4px
+	&__btn:hover,
+	&__btn:focus
+		font-size: 17px
+	&__list
+		list-style: none
+		padding: 0
+	&__list li
+		display: flex
+		align-items: center
+		height: 40px
+	&__list img
+		width: 47px
+	&__list .header__img
+		width: 21px
+		margin-left: 13px
+	&__list-img
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 62px
+	&__list-img img:last-child
+		width: 15px
+	&__list a
+		text-decoration: none
+		color: #303030
+		font-size: 14px
+		margin-left: 14px
+		border-radius: 4px
+	&__list a:hover,
+	&__list a:focus
+		color: #fff
+		background: #FF3754
+		font-size: 20px
+		padding: 0 10px
+
+@media (min-width: 900px)
+	.header
+		&__wrap
+			padding-top: 188px
+			margin-bottom: 0
+			height: 960px
+			display: flex
+			flex-direction: column
+			& h1
+				font-size: 90px
+			& h1 br
+				display: none
+			& p
+				font-size: 50px
+		&__btn
+			width: 412px
+			margin-top: auto
+			margin-bottom: 84px
+			order: 1
+			font-size: 19px
+		&__btn:hover,
+		&__btn:focus
+			font-size: 20px
+		&__list li
+			height: 70px
+		&__list img
+			width: auto
+		&__list .header__img
+			width: auto
+			margin-left: 18px
+		&__list-img
+			width: 90px
+		&__list-img img:last-child
+			width: auto
+		&__list a
+			color: #fff
+			font-size: 24px
+			margin-left: 50px
+		&__list a:hover,
+		&__list a:focus
+			font-size: 36px

@@ -1,0 +1,82 @@
+.three-block
+	background: linear-gradient(#FDF4F4, #ECF3EC)
+	padding: 40px 0
+	&__wrap h2
+		font-size: 40px
+		color: #FF3754
+		text-align: center
+	&__wrapper
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+		margin-top: 26px
+	&__wrapper label
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 63px
+		height: 40px
+		margin: 0 5px
+		margin-bottom: 10px
+		border: 1px solid #888888
+		border-radius: 4px
+		font-size: 13px
+		color: #888888
+		cursor: pointer
+	&__list
+		list-style: none
+		padding: 0
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+	&__list li
+		width: 300px
+		& img
+			width: 300px
+		& p b
+			font-size: 18px
+			font-weight: 700
+		& p
+			font-size: 16px
+			font-weight: 100
+			color: #303030
+			margin-left: 10px
+			margin-bottom: 10px
+
+#year-2019:checked ~ label[for="year-2019"],
+#year-2018:checked ~ label[for="year-2018"],
+#year-2017:checked ~ label[for="year-2017"],
+#year-2016:checked ~ label[for="year-2016"],
+#year-2015:checked ~ label[for="year-2015"],
+#year-2014:checked ~ label[for="year-2014"],
+#year-2013:checked ~ label[for="year-2013"],
+#year-2012:checked ~ label[for="year-2012"],
+#year-2011:checked ~ label[for="year-2011"]
+	background: #FF3754
+	border-color: #FF3754
+	color: #fff
+
+@media (min-width: 900px)
+	.three-block
+		padding: 70px 0
+		&__wrap h2
+			font-size: 70px
+		&__wrapper
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			justify-content: center
+			margin-top: 26px
+		&__wrapper label
+			display: none
+		&__list
+			justify-content: space-between
+			margin-top: 0
+		&__list li
+			width: 412px
+			margin-bottom: 40px
+			& img
+				width: auto

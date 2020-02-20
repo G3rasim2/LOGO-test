@@ -1,0 +1,176 @@
+.slider-block
+	padding: 40px 0
+	position: relative
+	&__wrap h2
+		font-size: 40px
+		color: #FF3754
+		text-align: center
+	&__block
+		& h3
+			font-size: 30px
+			color: #888888
+			text-align: center
+		& .slider-block__text
+			font-size: 13px
+			color: #303030
+			text-align: center
+			text-transform: uppercase
+			letter-spacing: 3px
+			font-weight: 300
+			margin-top: 10px
+	&__btn
+		display: block
+		margin: 10px auto
+		margin-top: 30px
+		border: 1px solid #888888
+		border-radius: 4px
+		background: transparent
+		width: 156px
+		height: 40px
+		font-size: 13px
+		font-weight: bold
+		color: #888888
+	&__block-text
+		display: none
+	&__block-text--active
+		display: block
+	&__list
+		list-style: none
+		padding: 0
+		& li
+			padding-left: 20px
+			position: relative
+			font-size: 18px
+			font-weight: 100
+			margin-bottom: 10px
+			color: #303030
+		& li::before
+			content: ''
+			position: absolute
+			top: 8px
+			left: 0
+			display: block
+			width: 10px
+			height: 10px
+			background: #FF3754
+			border-radius: 4px
+	&__block-text p
+		color: #303030
+		font-size: 16px
+		font-weight: 300
+	&__block-text p b
+		font-size: 18px
+		font-weight: bold
+		margin-top: 30px
+		display: block
+		color: #000
+	&__slider-number
+		position: absolute
+		left: calc(50% - 40px)
+		bottom: 44px
+		width: 80px
+		text-align: center
+
+#slider-block-carousel img
+	margin: 20px auto
+	width: 128px
+
+#slider-block-carousel .owl-nav
+	display: flex
+	justify-content: space-between
+	margin: auto
+	width: 160px
+	margin-top: 20px
+	& .owl-prev,
+	& .owl-next
+		width: 30px
+		height: 25px
+		background: url(../img/block-2/arrow.svg) no-repeat center
+	& .owl-prev
+		transform: rotate(180deg) translateY(1px)
+	& .owl-prev:hover,
+	& .owl-next:hover,
+	& .owl-prev:focus,
+	& .owl-next:focus
+		background: url(../img/block-2/arrow-hover.svg) no-repeat center
+
+@media (min-width: 900px)
+	.slider-block
+		padding: 70px 0
+		&__wrap h2
+			font-size: 70px
+		&__wrapper 
+			display: flex
+			flex-direction: row-reverse
+			justify-content: space-between
+		&__block
+			width: 40%
+			& h2
+				text-align: left
+			& h3
+				font-size: 40px
+				text-align: left
+			& .slider-block__text
+				text-align: left
+				margin-top: 20px
+		&__btn
+			display: none
+		&__block-text
+			display: block
+		&__list
+			margin-top: 40px
+			& li
+				padding-left: 30px
+		&__block-text
+			margin-top: 40px
+		&__block-text p
+			font-size: 18px
+			margin-bottom: 10px
+		&__slider-number
+			bottom: 73px
+
+	#slider-block-carousel img
+		margin: 0
+		width: 50%
+		height: 50%
+		max-width: 550px
+		max-height: 550px
+
+@media (min-width: 1200px)
+	.slider-block
+		&__wrapper
+			padding: 20px 7%
+			position: relative
+		&__wrapper:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			width: 50px
+			background: #FF3754
+		&__wrapper:after
+			content: ''
+			position: absolute
+			top: 4%
+			left: 30px
+			height: 92%
+			width: 20px
+			background: #fff
+		&__block
+		&__block:before
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			height: 100%
+			width: 50px
+			background: #FF3754
+		&__block:after
+			content: ''
+			position: absolute
+			top: 4%
+			right: 30px
+			height: 92%
+			width: 20px
+			background: #fff
